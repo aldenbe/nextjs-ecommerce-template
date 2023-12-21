@@ -1,12 +1,31 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    loader: "akamai",
-    domains: [
-      "picsum.photos",
-      "loremflickr.com",
-      "placeimg.com",
-      "source.unsplash.com",
-    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'picsum.photos',
+        port: '',
+        pathname: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'loremflickr.com',
+        port: '',
+        pathname: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'placeimg.com',
+        port: '',
+        pathname: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+        port: '',
+        pathname: '',
+      },
+    ]
   },
 };
