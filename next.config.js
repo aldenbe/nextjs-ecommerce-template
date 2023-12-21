@@ -1,5 +1,5 @@
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
@@ -11,12 +11,13 @@ const nextConfig = {
   // distDir: 'dist',
   reactStrictMode: true,
   images: {
-    domains: [
-      "picsum.photos",
-      "loremflickr.com",
-      "placeimg.com",
-      "source.unsplash.com",
-    ],
+    unoptimized: true,
+    // domains: [
+    //   "picsum.photos",
+    //   "loremflickr.com",
+    //   "placeimg.com",
+    //   "source.unsplash.com",
+    // ],
   },
 }
 
